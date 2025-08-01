@@ -45,7 +45,8 @@ if prompt := st.chat_input("What policy do you want to generate?"):
 
     try:
         #webhook_url = "https://5665bc9c4901.ngrok-free.app/webhook/94e66a1d-abd1-48ca-a081-02f952c79d47 "
-        webhook_url ="http://localhost:5678/webhook/94e66a1d-abd1-48ca-a081-02f952c79d47"  # 🔁 Replace with your n8n webhook
+        #webhook_url ="http://localhost:5678/webhook/94e66a1d-abd1-48ca-a081-02f952c79d47"  # 🔁 Replace with your n8n webhook
+        webhook_url ="https://dib-99.app.n8n.cloud/webhook/94e66a1d-abd1-48ca-a081-02f952c79d47"
         if files:
             response = requests.post(webhook_url, data=payload, files=files)
         else:
